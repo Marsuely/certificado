@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  color: #f8f7ff;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #17152d, #31205c);
+}
+
+.caixa-principal {
+  width: min(100%, 720px);
+  min-height: 380px;
+  padding: 40px;
+  border: 1px solid #ffffff2b;
+  border-radius: 20px;
+  background: #17152de8;
+  box-shadow: 0 18px 60px #0005;
+}
+
+h1, h2 {
+  margin-top: 0;
+  color: #c8a8ff;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.caixa-inicio,
+.caixa-jogo,
+.caixa-resultado {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button {
+  padding: 14px 20px;
+  border: 0;
+  border-radius: 10px;
+  color: #17152d;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #c8a8ff;
+  transition: transform 0.15s, background 0.15s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #ddc8ff;
+}
+
+.caixa-alternativas {
+  display: grid;
+  gap: 12px;
+}
+
+.caixa-alternativas button {
+  text-align: left;
+}
+
+.progresso {
+  color: #c8a8ff;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+  .caixa-principal {
+    padding: 24px;
+  }
+}
